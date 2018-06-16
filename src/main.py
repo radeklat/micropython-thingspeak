@@ -5,7 +5,7 @@ import dht
 try:
     from thingspeak import ThingSpeakAPI, Channel, ProtoHTTP
 except ImportError:
-    from .thingspeak import ThingSpeakAPI, Channel, ProtoHTTP
+    from .lib.thingspeak import ThingSpeakAPI, Channel, ProtoHTTP
 
 dht_sensor = dht.DHT22(machine.Pin(0))
 

@@ -171,7 +171,7 @@ class ThingSpeakAPI:
             protocol_class: Type[_ProtocolBase] = ProtoHTTPS,
             log: bool = False
     ):
-        self._api: _ProtocolBase = protocol_class(log)
+        self._api = protocol_class(log)  # type: _ProtocolBase
         self._channels = {channel.name: channel for channel in channels}
         self._api_time_limit_sec = max(
             ThingSpeakAPI._API_ALL_DEVICES_POSTING_LIMIT_SEC * len(channels),
