@@ -14,6 +14,11 @@ devices running MicroPython (such as ESP8266).
 
 # Usage guide
 
+[Download the library](https://raw.githubusercontent.com/radeklat/micropython-thingspeak/master/src/lib/thingspeak.py) 
+and put it in the _lib_ folder of your project (see 
+[esp8266-deploy-micropython](https://github.com/radeklat/esp8266-deploy-micropython) 
+for easy deployments!).
+
 ## Get ThingSpeak API keys
 
 1. Login on [ThingSpeak website](https://thingspeak.com)
